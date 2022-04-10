@@ -1,0 +1,56 @@
+main {
+  @include flex(space-around, center);
+  max-width: 80vw;
+  margin: 5rem auto;
+  font-family: "Poppins", sans-serif;
+
+  > section {
+    @include flex(center, center);
+    flex-direction: column;
+    width: 50%;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    .underline {
+      height: 2px;
+      width: 100%;
+      background-color: #23509c;
+      margin: 2rem 0;
+    }
+
+    .buttons {
+      @include flex(flex-start, center);
+      flex-wrap: wrap;
+
+      button {
+        font-family: "Poppins", sans-serif;
+        margin: 0.5rem;
+        background: none;
+        color: #5a86c8;
+        border: 3px solid #5a86c8;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        cursor: pointer;
+
+        &:hover {
+          color: #23509c;
+          border: 3px solid #23509c;
+        }
+
+        &.active {
+          background-color: #23509c;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .accessories {
+    > div {
+      width: 100%;
+    }
+  }
+}

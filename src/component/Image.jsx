@@ -2,7 +2,7 @@ import React from "react";
 
 function Image() {
   return (
-    <section>
+    <section className="image">
       Image
       <button>Download</button>
     </section>

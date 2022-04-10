@@ -3,13 +3,13 @@ import Accessories from "./component/Accessories";
 
 function App() {
   return (
-    <main>
+    <>
       <h1 id="title">Alpaca image generator</h1>
-      <section>
+      <main>
         <Image />
         <Accessories />
-      </section>
-    </main>
+      </main>
+    </>
   );
 }
 
