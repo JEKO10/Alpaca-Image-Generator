@@ -1,13 +1,14 @@
 main {
-  @include flex(space-around, center);
+  @include flex(space-around, flex-start);
   max-width: 80vw;
-  margin: 5rem auto;
-  font-family: "Poppins", sans-serif;
+  margin: 4rem auto 5rem;
+  font-family: $primaryFont;
 
   > section {
     @include flex(center, center);
     flex-direction: column;
     width: 50%;
+    height: 100%;
 
     h1 {
       margin-bottom: 1rem;
@@ -32,7 +33,7 @@ main {
       }
 
       button {
-        font-family: "Poppins", sans-serif;
+        font-family: $primaryFont;
         margin: 0.5rem;
         background: none;
         color: #5a86c8;
@@ -41,6 +42,7 @@ main {
         padding: 10px 20px;
         font-size: 1.1rem;
         cursor: pointer;
+        transition: $defaultTransition;
 
         &:hover {
           color: #23509c;
@@ -53,11 +55,39 @@ main {
         }
       }
     }
-  }
 
-  .accessories {
-    > div {
-      width: 100%;
+    #download {
+      font-family: $primaryFont;
+      margin-top: 2rem;
+      padding: 10px 30px;
+      border-radius: 30px;
+      font-size: 1.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      background-color: #292c34;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: $defaultTransition;
+
+      &:hover {
+        background-color: #fff;
+        color: #292c34;
+        border: 2px solid #292929;
+      }
+    }
+
+    &.accessories {
+      > div {
+        width: 100%;
+      }
+    }
+
+    &.image {
+      img {
+        width: 80%;
+      }
     }
   }
 }
