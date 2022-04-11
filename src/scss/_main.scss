@@ -24,6 +24,13 @@ main {
       @include flex(flex-start, center);
       flex-wrap: wrap;
 
+      &.parts {
+        button {
+          font-size: 0.9rem;
+          padding: 5px 10px;
+        }
+      }
+
       button {
         font-family: "Poppins", sans-serif;
         margin: 0.5rem;

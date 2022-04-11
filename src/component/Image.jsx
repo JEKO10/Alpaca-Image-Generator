@@ -1,5 +1,3 @@
-import React from "react";
-
 function Image() {
   return (
     <section className="image">
