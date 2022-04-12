@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Alpaca-Image-Generator/static/css/main.2c52b5a5.css",
-    "main.js": "/Alpaca-Image-Generator/static/js/main.701dd9dc.js",
+    "main.css": "/Alpaca-Image-Generator/static/css/main.58de8666.css",
+    "main.js": "/Alpaca-Image-Generator/static/js/main.02d92acd.js",
     "static/js/787.10b52ef2.chunk.js": "/Alpaca-Image-Generator/static/js/787.10b52ef2.chunk.js",
     "index.html": "/Alpaca-Image-Generator/index.html",
-    "main.2c52b5a5.css.map": "/Alpaca-Image-Generator/static/css/main.2c52b5a5.css.map",
-    "main.701dd9dc.js.map": "/Alpaca-Image-Generator/static/js/main.701dd9dc.js.map",
+    "main.58de8666.css.map": "/Alpaca-Image-Generator/static/css/main.58de8666.css.map",
+    "main.02d92acd.js.map": "/Alpaca-Image-Generator/static/js/main.02d92acd.js.map",
     "787.10b52ef2.chunk.js.map": "/Alpaca-Image-Generator/static/js/787.10b52ef2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c52b5a5.css",
-    "static/js/main.701dd9dc.js"
+    "static/css/main.58de8666.css",
+    "static/js/main.02d92acd.js"
   ]
 }
