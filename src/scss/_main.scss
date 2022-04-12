@@ -59,6 +59,24 @@ main {
     .content {
       position: relative;
       text-align: center;
+
+      #ears,
+      #eyes,
+      #hair,
+      #leg,
+      #neck,
+      #mouth,
+      #accessories,
+      #nose {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      #eyes,
+      #mouth {
+        z-index: 2;
+      }
     }
 
     #download {
