@@ -1,9 +1,14 @@
-import bg from "../alpaca/backgrounds/blue50.png";
+import { alpacaConfig } from "../alpacaConfig";
 
 function Image() {
   return (
     <section className="image">
-      <img src={bg} alt="IMG" />
+      <div className="content">
+        <img
+          src={process.env.PUBLIC_URL + alpacaConfig[0].items[8].src}
+          alt="Ears"
+        />
+      </div>
       <button id="download">Download</button>
     </section>
   );

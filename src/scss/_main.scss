@@ -56,9 +56,14 @@ main {
       }
     }
 
+    .content {
+      position: relative;
+      text-align: center;
+    }
+
     #download {
       font-family: $primaryFont;
-      margin-top: 2rem;
+      margin-top: 1rem;
       padding: 10px 30px;
       border-radius: 30px;
       font-size: 1.5rem;
