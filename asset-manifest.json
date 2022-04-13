@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Alpaca-Image-Generator/static/css/main.58de8666.css",
-    "main.js": "/Alpaca-Image-Generator/static/js/main.02d92acd.js",
+    "main.css": "/Alpaca-Image-Generator/static/css/main.b31fa4de.css",
+    "main.js": "/Alpaca-Image-Generator/static/js/main.b9972740.js",
     "static/js/787.10b52ef2.chunk.js": "/Alpaca-Image-Generator/static/js/787.10b52ef2.chunk.js",
     "index.html": "/Alpaca-Image-Generator/index.html",
-    "main.58de8666.css.map": "/Alpaca-Image-Generator/static/css/main.58de8666.css.map",
-    "main.02d92acd.js.map": "/Alpaca-Image-Generator/static/js/main.02d92acd.js.map",
+    "main.b31fa4de.css.map": "/Alpaca-Image-Generator/static/css/main.b31fa4de.css.map",
+    "main.b9972740.js.map": "/Alpaca-Image-Generator/static/js/main.b9972740.js.map",
     "787.10b52ef2.chunk.js.map": "/Alpaca-Image-Generator/static/js/787.10b52ef2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.58de8666.css",
-    "static/js/main.02d92acd.js"
+    "static/css/main.b31fa4de.css",
+    "static/js/main.b9972740.js"
   ]
 }
