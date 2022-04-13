@@ -1,11 +1,11 @@
 main {
   @include flex(space-around, flex-start);
   max-width: 80vw;
-  margin: 4rem auto 5rem;
+  margin: 4rem auto 1rem;
   font-family: $primaryFont;
 
   > section {
-    @include flex(center, center);
+    @include flex(flex-start, center);
     flex-direction: column;
     width: 50%;
     height: 100%;
@@ -58,7 +58,6 @@ main {
 
     .content {
       position: relative;
-      text-align: center;
 
       #ears,
       #eyes,
@@ -79,25 +78,31 @@ main {
       }
     }
 
-    #download {
-      font-family: $primaryFont;
-      margin-top: 1rem;
-      padding: 10px 30px;
-      border-radius: 30px;
-      font-size: 1.5rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      background-color: #292c34;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      transition: $defaultTransition;
+    .mechanics {
+      @include flex(flex-start, center);
+      width: 100%;
 
-      &:hover {
-        background-color: #fff;
-        color: #292c34;
-        border: 2px solid #292929;
+      #download,
+      #random {
+        font-family: $primaryFont;
+        margin: 1rem;
+        padding: 10px 30px;
+        border-radius: 30px;
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        background-color: #292c34;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: $defaultTransition;
+
+        &:hover {
+          background-color: #fff;
+          color: #292c34;
+          border: 2px solid #292929;
+        }
       }
     }
 
