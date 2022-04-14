@@ -5,6 +5,14 @@ function Accessories() {
   const [title, setTitle] = useState("Backgrounds");
   const [isActive, setIsActive] = useState(false);
   const [background, setBackground] = useState(0);
+  const [ears, setEars] = useState(0);
+  const [eyes, setEyes] = useState(0);
+  const [hair, setHair] = useState(0);
+  const [leg, setLeg] = useState(0);
+  const [neck, setNeck] = useState(0);
+  const [mouth, setMouth] = useState(0);
+  const [accessories, setAccessories] = useState(0);
+  const [nose, setNose] = useState(0);
   const base = process.env.PUBLIC_URL;
 
   return (
@@ -16,18 +24,34 @@ function Accessories() {
             alt="BG"
             id="bg"
           />
-          <img src={base + alpacaConfig[1].items[0].src} alt="ears" id="ears" />
-          <img src={base + alpacaConfig[2].items[0].src} alt="eyes" id="eyes" />
-          <img src={base + alpacaConfig[3].items[0].src} alt="hair" id="hair" />
-          <img src={base + alpacaConfig[4].items[0].src} alt="leg" id="leg" />
           <img
-            src={base + alpacaConfig[5].items[0].src}
+            src={base + alpacaConfig[1].items[ears].src}
+            alt="ears"
+            id="ears"
+          />
+          <img
+            src={base + alpacaConfig[2].items[eyes].src}
+            alt="eyes"
+            id="eyes"
+          />
+          <img
+            src={base + alpacaConfig[3].items[hair].src}
+            alt="hair"
+            id="hair"
+          />
+          <img src={base + alpacaConfig[4].items[leg].src} alt="leg" id="leg" />
+          <img
+            src={base + alpacaConfig[5].items[mouth].src}
             alt="mouth"
             id="mouth"
           />
-          <img src={base + alpacaConfig[6].items[0].src} alt="neck" id="neck" />
           <img
-            src={base + alpacaConfig[7].items[0].src}
+            src={base + alpacaConfig[6].items[neck].src}
+            alt="neck"
+            id="neck"
+          />
+          <img
+            src={base + alpacaConfig[7].items[accessories].src}
             alt="accessories"
             id="accessories"
           />
@@ -71,8 +95,38 @@ function Accessories() {
                       key={part.id}
                       id={part.id}
                       onClick={(e) => {
-                        setBackground(e.target.id);
-                        console.log(e.target.id);
+                        const id = e.target.id;
+                        switch (title) {
+                          case "Backgrounds":
+                            setBackground(id);
+                            break;
+                          case "Ears":
+                            setEars(id);
+                            break;
+                          case "Eyes":
+                            setEyes(id);
+                            break;
+                          case "Hair":
+                            setHair(id);
+                            break;
+                          case "Leg":
+                            setLeg(id);
+                            break;
+                          case "Neck":
+                            setNeck(id);
+                            break;
+                          case "Mouth":
+                            setMouth(id);
+                            break;
+                          case "Accessories":
+                            setAccessories(id);
+                            break;
+                          case "Nose":
+                            setNose(id);
+                            break;
+                          default:
+                          //
+                        }
                       }}
                     >
                       {part.label}
