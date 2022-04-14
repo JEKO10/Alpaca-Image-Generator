@@ -9,11 +9,21 @@ function Accessories() {
   const [eyes, setEyes] = useState(0);
   const [hair, setHair] = useState(0);
   const [leg, setLeg] = useState(0);
-  const [neck, setNeck] = useState(0);
   const [mouth, setMouth] = useState(0);
+  const [neck, setNeck] = useState(0);
   const [accessories, setAccessories] = useState(0);
-  const [nose, setNose] = useState(0);
   const base = process.env.PUBLIC_URL;
+
+  const randomHandler = () => {
+    setBackground(Math.floor(Math.random() * 14));
+    setEars(Math.floor(Math.random() * 2));
+    setEyes(Math.floor(Math.random() * 5));
+    setHair(Math.floor(Math.random() * 5));
+    setLeg(Math.floor(Math.random() * 5));
+    setMouth(Math.floor(Math.random() * 4));
+    setNeck(Math.floor(Math.random() * 3));
+    setAccessories(Math.floor(Math.random() * 3));
+  };
 
   return (
     <main>
@@ -58,7 +68,9 @@ function Accessories() {
           <img src={base + alpacaConfig[8].items[0].src} alt="nose" id="nose" />
         </div>
         <div className="mechanics">
-          <button id="random">Random</button>
+          <button id="random" onClick={randomHandler}>
+            Random
+          </button>
           <button id="download">Download</button>
         </div>
       </section>
@@ -112,20 +124,17 @@ function Accessories() {
                           case "Leg":
                             setLeg(id);
                             break;
-                          case "Neck":
-                            setNeck(id);
-                            break;
                           case "Mouth":
                             setMouth(id);
+                            break;
+                          case "Neck":
+                            setNeck(id);
                             break;
                           case "Accessories":
                             setAccessories(id);
                             break;
-                          case "Nose":
-                            setNose(id);
-                            break;
                           default:
-                          //
+                            break;
                         }
                       }}
                     >
