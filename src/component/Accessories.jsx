@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { alpacaConfig } from "../alpacaConfig";
+import download from "downloadjs";
+import { toPng } from "html-to-image";
 
 function Accessories() {
   const [title, setTitle] = useState("Backgrounds");
