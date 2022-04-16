@@ -27,6 +27,13 @@ function Accessories() {
     setAccessories(Math.floor(Math.random() * 3));
   };
 
+  const downloadImage = () => {
+    const alpacaCanvasNode = document.getElementsByClassName("content")[0];
+    toPng(alpacaCanvasNode).then((dataUrl) => {
+      download(dataUrl, "alpaca.png");
+    });
+  };
+
   return (
     <main>
       <section className="image">
@@ -73,7 +80,9 @@ function Accessories() {
           <button id="random" onClick={randomHandler}>
             Random
           </button>
-          <button id="download">Download</button>
+          <button id="download" onClick={downloadImage}>
+            Download
+          </button>
         </div>
       </section>
 
