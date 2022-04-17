@@ -1,3 +1,10 @@
+#title {
+  font-size: 3rem;
+  font-family: $primaryFont;
+  max-width: 80vw;
+  margin: 2rem auto;
+}
+
 main {
   @include flex(space-around, flex-start);
   max-width: 80vw;
@@ -29,6 +36,11 @@ main {
         button {
           font-size: 0.9rem;
           padding: 5px 10px;
+
+          &.active {
+            background-color: #23509c;
+            color: #fff;
+          }
         }
       }
 
@@ -85,10 +97,10 @@ main {
       #download,
       #random {
         font-family: $primaryFont;
-        margin: 1rem;
+        margin: 1rem 0.5rem;
         padding: 10px 30px;
         border-radius: 30px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 900;
         text-transform: uppercase;
         letter-spacing: 3px;

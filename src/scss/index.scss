@@ -1,13 +1,7 @@
 @import "config";
 @import "main";
+@import "responsive";
 
 body {
   background-color: #eeecee;
-}
-
-#title {
-  font-size: 3rem;
-  font-family: $primaryFont;
-  max-width: 80vw;
-  margin: 2rem auto;
 }
