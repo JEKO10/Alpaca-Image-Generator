@@ -29,4 +29,4 @@ Firstly, I set up states for every single alpaca part. Then, displayed all image
 
 ## Live preview
 
-[Click for live preview](https://jeko10.github.io/Job-Listing/)
+[Click for live preview](https://jeko10.github.io/Alpaca-Image-Generator/)
