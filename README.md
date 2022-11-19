@@ -17,7 +17,7 @@ This is a solution to the [DevProjects](https://www.codementor.io/projects/web/a
 
 ## Project overview
 
-Firstly, I set up states for every single alpaca part. Then, displayed all image parts with map method, and using switch statement, parts are changing on the image. You are able to change its neck, mouth, hair, ears, eyes, leg, etc. There are 2 buttons, for random generating alpaca and downloading image. Random generating was created by using Math.floor(Math.random() * number of options) function. Downloading image is powered by DownloadJS and Html to image packages.
+Firstly, I set up states for every single alpaca part. Then, displayed all image parts with the map method, and using the switch statement, parts are changing on the image. You are able to change its neck, mouth, hair, ears, eyes, leg, etc. There are 2 buttons, for generating random alpaca and downloading the image. Random generating was created by using the Math.floor(Math.random() * number of options) function. Downloading images is powered by DownloadJS and Html to image packages.
 
 ## Built with
 
