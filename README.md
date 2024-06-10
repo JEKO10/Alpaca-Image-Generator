@@ -9,6 +9,7 @@
 - [Project task](#project-task)
 - [Project overview](#project-overview)
 - [Built with](#built-with)
+- [Lighthouse Score](#lighthouse-score)
 - [Live preview](#live-preview)
 
 ## Project task
@@ -26,6 +27,19 @@ Firstly, I set up states for every single alpaca part. Then, displayed all image
 - Downloadjs
 - Html to image
 - GitHub Pages
+
+## Lighthouse Score
+
+![Lighthouse Score](https://github.com/JEKO10/Alpaca-Image-Generator/assets/84730554/7eee2a0f-4670-4acb-b341-5214b2904417)
+
+- **Performance**: 99
+- **Accessibility**: 95
+- **Best Practices**: 100
+- **SEO**: 100
+
+*Last updated: 6/10/2024*
+
+I continuously strive to maintain and improve these scores with each update.
 
 ## Live preview
 
